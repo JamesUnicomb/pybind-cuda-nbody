@@ -5,7 +5,7 @@ A simple demonstration for running cuda within pybind.
 ## To install
 
 ```
-git clone https://github.com/pybind/pybind11
+git clone --recursive git@github.com:JamesUnicomb/pybind-cuda-nbody.git
 pip install --upgrade pip wheel
 pip install .
 ```
