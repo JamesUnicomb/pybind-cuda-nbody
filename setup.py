@@ -6,27 +6,6 @@ import sys
 from setuptools import Extension, setup
 from setuptools.command.build_ext import build_ext
 
-# # pre install pybind
-# subprocess.check_call(
-#     [
-#         sys.executable,
-#         "-m",
-#         "pip",
-#         "install",
-#         "wheel",
-#     ]
-# )
-# subprocess.check_call(
-#     [
-#         sys.executable,
-#         "-m",
-#         "pip",
-#         "install",
-#         ".",
-#     ],
-#     cwd=os.path.join(os.path.dirname(__file__), "pybind11"),
-# )
-
 version = "1.0.0"
 
 # Convert distutils Windows platform specifiers to CMake -A arguments
@@ -36,7 +15,6 @@ PLAT_TO_CMAKE = {
     "win-arm32": "ARM",
     "win-arm64": "ARM64",
 }
-
 
 # Boilerplate to enable setuptools to invoke cmake.
 # Taken directly from https://github.com/pybind/cmake_example

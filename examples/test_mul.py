@@ -2,7 +2,7 @@ import gpu_library
 import numpy as np
 import time
 
-size = 10000000
+size = 1000000
 arr1 = np.linspace(1.0,100.0, size)
 arr2 = np.linspace(1.0,100.0, size)
 
