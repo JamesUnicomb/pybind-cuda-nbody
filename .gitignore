@@ -1,0 +1,10 @@
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+pybind11
+venv
+build
+gpu_library.egg-info
